@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando Javascript</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            color:brown;
+            font: normal 20pt arial;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>  
+
+    <div>   
+        <h1>Ola, mundo!</h1>
+        <p>mundo de oportunidades!</p>
+    </div>
+   
+
+
+<script>
+        //Estudando javascript
+
+       //window.confirm('Java não é a mesma coisa que javascript!') //usei duas barras pra n selecionar
+       var nome = window.prompt('Qual o seu nome?') //pergunta o nome
+       alert('Ola '+nome+' é um prazer te conhecer!') //vai cumprimentar 
+       // (string + string) concatenação
+       // Fazendo uma soma
+
+    var n1 = Number(window.prompt('Digite um número'))
+    var n2 = Number(window.prompt('Digite outro número'))
+    var s = n1 + n2
+    alert( `a soma de ${n1} com ${n2} é ${s}` )
+    var name = window.prompt('Qual o seu nome?')
+    //formando strings
+    //.length //quantifica os caracteres
+    //.toUpperCase() //torna tudo maiuscula
+    //.LowerCase() //torna tudo minuscula
+    //pergunta o nome
+    alert(`Ola ${name}, seu nome tem ${name.length} letras`) //conta as letras da string
+
+    //formatando numeros
+    var n3 = 1515.5
+    n3.tofixe(2) // adiciona duas casas
+    n3.toFixed(2).replace('.' , ',') //troca o ponto por virgula
+    n3.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'}) //apresenta como mometario do real!
+       
+       
+</script>     
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quem é voce?</title>
+</head>
+<body>
+	<div>
+		<h1>Reconhecimento</h1>
+		Pais que nasceu:<input type="text" name="rec" id="reco">
+		<input type="button" value="verificar" onclick="verificar()">
+	</div>
+	<div id="natu">
+		
+	</div>
+
+	<script type="text/javascript">
+		//demorei muito pra conseguir
+		function verificar() {
+			var verify = window.document.getElementById('reco');//aparentemente só reconheceu a informação quando a tornei em uma variavel
+			var pais   = (verify.value);//e inseri a variavel dentro de outra com o value, foi um bom chute e funcionou
+if (pais == 'Brasil') {
+	natu.innerHTML = ('Brasileiro')
+} else {
+
+	natu.innerHTML = ('Estrangeiro')
+}
+		} //caraca funcionou!
+//nao usei css por estar exausto e estressado,mas as 11:00 pm fiquei feliz com essa pequena conquista
+	</script>
+</body>
+</html>

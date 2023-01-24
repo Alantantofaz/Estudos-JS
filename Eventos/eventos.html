@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eventos DOM</title>
+
+<style type="text/css">
+		
+div#evento {
+			font: normal 18pt arial;
+			background-color: blueviolet;
+			color: yellow;
+			width:  200px;
+			height: 200px;
+			line-height: 200px;
+			border-radius: 22px;
+			align-items: center;
+			text-align: center;
+
+		 }
+
+</style>
+
+
+</head>
+<body>
+	<div id="evento">
+
+		<strong>Não clique aqui</strong>
+		
+
+	</div>
+
+	<script type="text/javascript">
+
+	var clique = window.document.getElementById('evento'); //não faça isso sempre
+
+		clique.addEventListener('click',clicar);
+		clique.addEventListener('mouseenter', entrar);
+		clique.addEventListener('mouseout',sair);
+		
+		function clicar() {
+			clique.innerText = 'MORREU'; 
+			clique.style.background = 'black';
+		}
+	//Criou um evento ao ser clicado
+
+		function entrar() {
+			clique.innerText = 'entrou'; 
+
+		}
+		function sair(){
+			clique.innerText = 'saiu'; 
+
+		}
+
+
+
+	</script>
+</body>
+</html>
